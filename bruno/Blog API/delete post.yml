@@ -1,0 +1,18 @@
+info:
+  name: delete post
+  type: http
+  seq: 8
+
+http:
+  method: DELETE
+  url: "{{baseUrl}}/api/posts/6"
+  auth:
+    type: bearer
+    token: "{{token}}"
+
+settings:
+  encodeUrl: true
+  timeout: 0
+  followRedirects: true
+  maxRedirects: 5
+  forwardAuthorizationHeader: false
